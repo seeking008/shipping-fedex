@@ -1,0 +1,11 @@
+{% extends "app/base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <div class="alert alert-success">
+      <h4 class="alert-heading">Shipping Info Received!</h4>
+      <p>Thank you, {{ form.cleaned_data.full_name }}. Your shipment is being processed.</p>
+      <hr>
+      <a href="{% url 'home' %}" class="btn btn-success">Back to Home</a>
+    </div>
+</div>
+{% endblock content %}
