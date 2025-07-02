@@ -29,15 +29,16 @@ class ShippingInfo(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=1000)
     price = models.IntegerField()
+    address = models.CharField(max_length=255, blank=True, null=True)
+
 
     def __str__(self):
         return self.name
 
 
 class ProductTracker(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='trackers', null=True, blank=True)
+    name = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='trackers', null=True, blank=True)
     tracking_id = models.CharField(max_length=100, unique=True, editable=False, null=True, blank=True)
-    created_at = models.DateTimeField(auto_now_add=True, blank=True, null=True)
 
     def save(self, *args, **kwargs):
         if not self.tracking_id:
