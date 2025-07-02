@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-0_(a)%=@o&3&q#$mu^o7utmrirw2&*4w74+7t#^&lpxdc%z$mw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'fedex-project-7.onrender.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'shipping-fedex.onrender.com']
 
 
 

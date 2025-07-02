@@ -28,8 +28,8 @@ class ShippingInfo(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=1000)
-    price = models.IntegerField()
     address = models.CharField(max_length=255, blank=True, null=True)
+    price = models.IntegerField()
 
 
     def __str__(self):

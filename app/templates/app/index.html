@@ -35,8 +35,8 @@
         <div class="alert alert-success mt-4">
             <h4>Tracking ID: {{ tracker.tracking_id }}</h4>
             <p><strong>Name:</strong> {{ tracker.product.name }}</p>
-            <p><strong>Address:</strong> {{ tracker.product.address }}</p>
             <p><strong>Price:</strong> ${{ tracker.product.price }}</p>
+            <p><strong>Address:</strong> {{ tracker.product.address }}</p>
         </div>
         {% elif error %}
         <div class="alert alert-danger mt-4">
