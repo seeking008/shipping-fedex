@@ -4,6 +4,9 @@ from .forms import SignUpForm, LoginForm, ShippingInfoForm, SupportForm
 from django.contrib.auth import login, logout
 # Create your views here.
 
+def home(request):
+    return render(request, 'home.html')
+
 def support_view(request):
     submitted = False
 
