@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-0_(a)%=@o&3&q#$mu^o7utmrirw2&*4w74+7t#^&lpxdc%z$mw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'fedex-project-2.onrender.com', 'fedex-project-2.onrender.com:8000']
 
 
 # Application definition
