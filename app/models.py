@@ -53,4 +53,4 @@ class ProductTracker(models.Model):
                 return tracking_id
 
     def __str__(self):
-        return f"Tracking ID for {self.product.name}: {self.tracking_id}"
+        return f"Tracking ID for {self.name.name}: {self.tracking_id}"
