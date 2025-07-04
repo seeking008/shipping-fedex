@@ -39,6 +39,9 @@ class Product(models.Model):
 class ProductTracker(models.Model):
     name = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='trackers', null=True, blank=True)
     tracking_id = models.CharField(max_length=100, unique=True, editable=False, null=True, blank=True)
+    price = models.IntegerField(blank=True, null=True)
+    address = models.CharField(max_length=255, blank=True, null=True)
+    
 
     def save(self, *args, **kwargs):
         if not self.tracking_id:
